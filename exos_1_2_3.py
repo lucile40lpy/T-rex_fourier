@@ -38,9 +38,8 @@ segments_nombres = [0] * 10
 def sample_number(d):
 	points = digit_sample(d)
 	segments = [0] * (len(points_chiffres[d]) - 1)
-	for i in range(len(points)):
-		if points[i + 1]:
-			segments[i] = segment(points[i], points[i + 1], 5) # le chiffre 5 est à modifier selon le niveau de précision souhaité
+for i in range(len(points) - 1):
+		segments[i] = segment(points[i], points[i + 1], 5) # le chiffre 5 est à modifier selon le niveau de précision souhaité
 	return segments
 
 
