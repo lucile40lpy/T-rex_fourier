@@ -13,7 +13,7 @@ segment(complex(2, 3), complex(10, 4), 5)
 
 # example
 
-print(segment(1 + 1j, 2 - 3j, 10)
+print(segment(1 + 1j, 2 - 3j, 10))
 
 
 # EXERCICE 2
