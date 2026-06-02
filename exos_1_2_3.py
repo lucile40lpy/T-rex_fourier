@@ -11,6 +11,10 @@ def segment (p1, p2, m): # p1 et p2 pas liste mais complexe
     return points
 segment(complex(2, 3), complex(10, 4), 5)
 
+# example
+
+print(segment(1 + 1j, 2 - 3j, 10))
+
 
 # EXERCICE 2
 
@@ -42,6 +46,9 @@ for i in range(len(points) - 1):
 		segments[i] = segment(points[i], points[i + 1], 5) # le chiffre 5 est à modifier selon le niveau de précision souhaité
 	return segments
 
+#example
+print(sample_number(2))
+
 
 # EXERCICE 3
 
@@ -52,3 +59,6 @@ def complex(points_coord): # points_coord est une liste de listes (ex: [[x point
 		im = points_coord[i][1]
 		points_complex[i] = reel + im * 1j
 	return points_complex
+
+# example
+print(complex([[1, 2], [3, -4]]))
